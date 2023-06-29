@@ -1,0 +1,9 @@
+rem https://www.lfd.uci.edu/~gohlke/pythonlibs/
+@echo off
+call conda activate
+call pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
+call conda activate pytorch
+call pip install numpy
+call pip install assets/lib/opencv_python-4.5.5-cp39-cp39-win_amd64.whl
+call pip install assets/lib/Pillow_SIMD-9.0.0.post0-cp39-cp39-win_amd64.whl
+cmd /k
